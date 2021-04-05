@@ -392,6 +392,8 @@ public class ServiceMessage {
     public static final String OT_WS_CLAIM_CANT_RENEW_FOUND_MISSING_DOCS = OT_WS + "096";
     /** ser_ot097 - Boundary can not be revised. It must have Approved status. */
     public static final String OT_WS_BOUNDARY_CANT_REVISE = OT_WS + "097";
+    /** ser_ot098 - Claim should have nr beginning with TEMP to renumber it. */
+    public static final String OT_WS_CLAIM_CANT_RENUMBER = OT_WS + "098";
     
     /** serredact001 - Restricted. */
     public static final String REDACT_RESTRICTED = REDACT + "001";
