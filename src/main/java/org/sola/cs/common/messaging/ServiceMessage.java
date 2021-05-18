@@ -86,6 +86,8 @@ public class ServiceMessage {
     public static final String GENERAL_WRONG_FILE_SIZE = GENERAL + "008";
     /** sergnrl009 - MD5 is not matching. */
     public static final String GENERAL_WRONG_MD5 = GENERAL + "009";
+    /** sergnrl010 - boundary_id is null. */
+    public static final String BOUNDARY_ID_IS_NULL = GENERAL + "010";
     
     // Exception Messages
     /** serexcp001 - An error occurred while logging an exception. Error details: {0} */
@@ -271,15 +273,15 @@ public class ServiceMessage {
     /** ser_ot037 - Denominator can't be 0 or less than 0 */
     public static final String OT_WS_CLAIM_SHARE_ZERO_DENOMINATOR = OT_WS + "037";
     /** ser_ot038 - Claim ID is required */
-    public static final String OT_WS_CLAIM_ID_REQUIERD = OT_WS + "038";
+    public static final String OT_WS_CLAIM_ID_REQUIRED = OT_WS + "038";
     /** ser_ot039 - Claimant ID is required */
-    public static final String OT_WS_CLAIM_CLAIMANT_ID_REQUIERD = OT_WS + "039";
+    public static final String OT_WS_CLAIM_CLAIMANT_ID_REQUIRED = OT_WS + "039";
     /** ser_ot040 - Parcel mapped geometry is required */
-    public static final String OT_WS_CLAIM_GEOMETRY_REQUIERD = OT_WS + "040";
+    public static final String OT_WS_CLAIM_GEOMETRY_REQUIRED = OT_WS + "040";
     /** ser_ot041 - Claimant name is required */
-    public static final String OT_WS_CLAIM_CLAIMANT_NAME_REQUIERD = OT_WS + "041";
+    public static final String OT_WS_CLAIM_CLAIMANT_NAME_REQUIRED = OT_WS + "041";
     /** ser_ot042 - Claimant is required */
-    public static final String OT_WS_CLAIM_CLAIMANT_REQUIERD = OT_WS + "042";
+    public static final String OT_WS_CLAIM_CLAIMANT_REQUIRED = OT_WS + "042";
     /** ser_ot043 - Claimant with provided ID already exists */
     public static final String OT_WS_CLAIM_CLAIMANT_EXISTS = OT_WS + "043";
     /** ser_ot044 - Owner with provided ID already exists */
@@ -287,9 +289,9 @@ public class ServiceMessage {
     /** ser_ot045 - Claim is outside of community area */
     public static final String OT_WS_CLAIM_OUTSIDE_COMMUNITY = OT_WS + "045";
     /** ser_ot046 - Owner name is required */
-    public static final String OT_WS_CLAIM_OWNER_NAME_REQUIERD = OT_WS + "046";
+    public static final String OT_WS_CLAIM_OWNER_NAME_REQUIRED = OT_WS + "046";
     /** ser_ot047 - Owner ID is required */
-    public static final String OT_WS_CLAIM_OWNER_ID_REQUIERD = OT_WS + "047";
+    public static final String OT_WS_CLAIM_OWNER_ID_REQUIRED = OT_WS + "047";
     /** ser_ot048 - claimant */
     public static final String OT_WS_CLAIM_CLAIMANT = OT_WS + "048";
     /** ser_ot049 - claim recorder */
@@ -309,9 +311,9 @@ public class ServiceMessage {
     /** ser_ot056 - Claim should have CREATED status to be able to submit it. */
     public static final String OT_WS_CLAIM_CANT_SUBMIT = OT_WS + "056";
     /** ser_ot057 - Land use is required */
-    public static final String OT_WS_CLAIM_LAND_USE_REQUIERD = OT_WS + "057";
+    public static final String OT_WS_CLAIM_LAND_USE_REQUIRED = OT_WS + "057";
     /** ser_ot058 - Claim type is required */
-    public static final String OT_WS_CLAIM_TYPE_REQUIERD = OT_WS + "058";
+    public static final String OT_WS_CLAIM_TYPE_REQUIRED = OT_WS + "058";
     /** ser_ot059 - Claim can not be challenged. */
     public static final String OT_WS_CLAIM_CANT_BE_CHALLENGED = OT_WS + "059";
     /** ser_ot060 - Form payload has different number of sections. */
@@ -384,7 +386,7 @@ public class ServiceMessage {
     public static final String OT_WS_BOUNDARY_FAILED_TO_CREATE_MAP = OT_WS + "092";
      /** ser_ot093 - Claim can not be canceled. Must have Moderated or Issued status. */
     public static final String OT_WS_CLAIM_CANT_CANCEL = OT_WS + "093";
-    /** ser_ot094 - Claim certificate can not be recorded as cancelled. The following documents must be attached first - "{0}". */
+    /** ser_ot094 - Claim certificate can not be recorded as canceled. The following documents must be attached first - "{0}". */
     public static final String OT_WS_CLAIM_CANT_CANCEL_FOUND_MISSING_DOCS = OT_WS + "094";
     /** ser_ot095 - Claim certificate can not be renewed. It must have Issued status. */
     public static final String OT_WS_CLAIM_CANT_RENEW = OT_WS + "095";
@@ -394,7 +396,13 @@ public class ServiceMessage {
     public static final String OT_WS_BOUNDARY_CANT_REVISE = OT_WS + "097";
     /** ser_ot098 - Claim should have nr beginning with TEMP to renumber it. */
     public static final String OT_WS_CLAIM_CANT_RENUMBER = OT_WS + "098";
-    
+    /** ser_ot099 - Claim nr sequence "{0}" cannot be created */
+    public static final String OT_WS_CLAIM_NR_SEQUENCE_CANNOT_BE_CREATED = OT_WS + "099";
+    /** ser_ot100 - Boundary Authority Code must be provided. */
+    public static final String OT_WS_BOUNDARY_AUTHORITY_CODE_EMPTY = OT_WS + "100";
+    /** ser_ot101 - Recording number cannot be generated - check code and sequence of associated First Nation. */
+    public static final String OT_WS_RECORDING_NR_NOT_GENERATED = OT_WS + "101";
+
     /** serredact001 - Restricted. */
     public static final String REDACT_RESTRICTED = REDACT + "001";
     /** serredact002 - Not Applicable. */
