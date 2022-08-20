@@ -86,8 +86,10 @@ public class ServiceMessage {
     public static final String GENERAL_WRONG_FILE_SIZE = GENERAL + "008";
     /** sergnrl009 - MD5 is not matching. */
     public static final String GENERAL_WRONG_MD5 = GENERAL + "009";
-    /** sergnrl010 - boundary_id is null. */
+    /** sergnrl010 - Community Area is missing. */
     public static final String BOUNDARY_ID_IS_NULL = GENERAL + "010";
+    /** sergnrl011 - Community Area is missing. */
+    public static final String GENERAL_COMMUNITY_AREA_IS_MISSING = GENERAL + "011";
     
     // Exception Messages
     /** serexcp001 - An error occurred while logging an exception. Error details: {0} */
@@ -402,6 +404,10 @@ public class ServiceMessage {
     public static final String OT_WS_BOUNDARY_AUTHORITY_CODE_EMPTY = OT_WS + "100";
     /** ser_ot101 - Recording number cannot be generated - check code and sequence of associated First Nation. */
     public static final String OT_WS_RECORDING_NR_NOT_GENERATED = OT_WS + "101";
+   /** ser_ot0102 - Lease can be printed only for claims with type code lease. */
+    public static final String OT_WS_LEASE_PRINT_NOT_ALLOWED = OT_WS + "102";
+   /** ser_ot0103 - Certificate can be printed only for claims with type code customary. */
+    public static final String OT_WS_CERT_PRINT_NOT_TYPE_CUSTOMARY_CLAIM = OT_WS + "103";
 
     /** serredact001 - Restricted. */
     public static final String REDACT_RESTRICTED = REDACT + "001";
